@@ -45,8 +45,8 @@ Shader "FishManShaderTutorial/TerrianMap" {
             float4 frag(v2f i) : SV_Target{
                 float2 pos = floor(i.uv  * _WidHigh) + _Offset;
                 float y = TerrainH(pos);
-                float3 nor = NormalTerrian(pos);
-                return float4(y,nor);
+                //float3 nor = NormalTerrian(pos);
+                return float4(y,0.,1.,0.);
             }
             ENDCG
         }//end pass  

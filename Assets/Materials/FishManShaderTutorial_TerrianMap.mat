@@ -25,6 +25,6 @@ Material:
     - _PosScale: 0.9
     m_Colors:
     - _NorVertDist: {r: 0.002, g: 241, b: 1, a: 1}
-    - _Offset: {r: -7260, g: 22620, b: 0, a: 0}
+    - _Offset: {r: -960, g: 420, b: 0, a: 0}
     - _WidHigh: {r: 61, g: 61, b: 0, a: 0}
     - normalEps: {r: 0.14, g: 241, b: 1, a: 1}
