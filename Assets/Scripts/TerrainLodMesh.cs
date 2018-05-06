@@ -25,7 +25,8 @@ class LODMesh {
         this.mapGenerator = mapGenerator;
     }
 
-    void OnMeshDataReceived(MeshData meshData) {
+    void OnMeshDataReceived(MeshTaskInfo info ) {
+        MeshData meshData = info.meshData;
         //主线程回调
         isWaitForData = false;
         mesh = meshData.CreateMesh();// TODO pool mesh

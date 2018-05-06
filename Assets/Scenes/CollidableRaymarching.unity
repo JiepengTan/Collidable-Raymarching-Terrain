@@ -151,17 +151,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 499242734}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab2f4f413e22f98489bebabdfc6783c0, type: 3}
+  m_Script: {fileID: 11500000, guid: 6fdcb01460e20104c8634c064df8571f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mat: {fileID: 0}
-  _MaxTerrianH: 0
-  _PosScale: 0
-  meshFilter: {fileID: 0}
-  meshRenderer: {fileID: 0}
-  isAutoUpdate: 0
-  isTestSingleTerrain: 0
-  _Offset: {x: 0, y: 0}
+  coliderViewDist: 6
+  coliderRatainDist: 8
+  coliderMeshLod: 6
+  viewer: {fileID: 1935414914}
 --- !u!114 &499242737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -170,12 +166,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 499242734}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5df769aa311efe4bbeecc60238c8c32, type: 3}
+  m_Script: {fileID: 11500000, guid: 39ce99a696cb81148818be6f93a3ed7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  detailLevels: []
-  viewer: {fileID: 0}
-  mapMaterial: {fileID: 0}
+  mat: {fileID: 2100000, guid: eb78876c995505944a576999c93f759e, type: 2}
+  MapXZScale: 0.9
+  MaxMapH: 500
 --- !u!1 &1012912685
 GameObject:
   m_ObjectHideFlags: 0
@@ -341,6 +337,7 @@ GameObject:
   - component: {fileID: 1935414911}
   - component: {fileID: 1935414916}
   - component: {fileID: 1935414915}
+  - component: {fileID: 1935414917}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -404,8 +401,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1935414910}
-  m_LocalRotation: {x: -0.01664726, y: -0.97421867, z: 0.2115236, w: -0.076672636}
-  m_LocalPosition: {x: -996.0759, y: 329.56714, z: -719.838}
+  m_LocalRotation: {x: 0.028357727, y: -0.002180786, z: 0.00006186716, w: 0.99959546}
+  m_LocalPosition: {x: -887.3243, y: 394.44342, z: -572.7636}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -419,7 +416,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1935414910}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5c33bd84c1d0fc4983c913e31842279, type: 3}
+  m_Script: {fileID: 11500000, guid: 7443c7bc6cc15e3409b80d03c6a3818b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpd: 10
@@ -438,3 +435,15 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 856d9fc8e9e0b67429429248bd248647, type: 2}
   _NoiseTex: {fileID: 2800000, guid: 96c8d6cf559332b4e834c00a5f85926d, type: 3}
   _LoopNum: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &1935414917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1935414910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d6f98d3055ff7448a6d03b6f574a152, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spd: 10

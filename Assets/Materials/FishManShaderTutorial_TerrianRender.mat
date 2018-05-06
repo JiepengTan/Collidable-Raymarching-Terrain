@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: FishManShaderTutorial_TerrianRender
-  m_Shader: {fileID: 4800000, guid: 28a9ded2a90da654aa606be1c7a9d14c, type: 3}
+  m_Shader: {fileID: 4800000, guid: 54d2d16b32968eb4bbe3d3c031453c02, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
